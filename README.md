@@ -38,7 +38,7 @@ Exemplos conceituais
 ### Dia 31/08/2022 até às 23h59.
 
 3. Devem ser entregues os arquivos HTML5, CSS3 e Javascript do projeto via formulário.
-    a.  Você deverá enviar o link do repositório para este formulário: https://forms.gle/CfgQisDB194JntWWA
-
-
-
+4. 
+    #### Você deverá enviar o link do repositório para este formulário: 
+    
+    https://forms.gle/CfgQisDB194JntWWA
