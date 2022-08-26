@@ -8,7 +8,6 @@
   font-weight: 500;
 }
 
-
 html {
   font-size: 10px;
   font-family: 'Anek Malayalam', sans-serif;
@@ -91,10 +90,6 @@ section.banner {
   /* background-position: center; */
 }
 
-button {
-  margin-top: 20px;
-}
-
 .btn-explorer {
   width: 200px;
   height: 50px;
@@ -103,16 +98,6 @@ button {
   font-size: 1.5rem;
   border-radius: 12px;
 }
-
-/* .btn-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f4f4f4;
-  text-decoration: none;
-  list-style: none;
-  font-weight: bold;
-} */
 
 .descricao {
   padding-bottom: 30px;
@@ -192,7 +177,6 @@ section.itens {
     background-color: #f4f4f484;
   }
 }
-
 
 .card-body {
   display: flex;
@@ -292,8 +276,9 @@ footer div.cardAluno {
 
 .btn {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   width: 200px;
   height: 50px;
   text-decoration: none;
@@ -304,6 +289,13 @@ footer div.cardAluno {
   font-size: 1.5rem;
   border-radius: 12px;
   margin-bottom: 20px;
+}
+
+.botoes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
 }
 
 .btn:hover {
@@ -444,6 +436,10 @@ p a:hover {
   header {
     flex-direction: column;
   }
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 428px) {
@@ -521,6 +517,10 @@ p a:hover {
   .p-card {
     margin-top: 10px;
   }
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+  }
 
 }@media only screen and (max-width: 428px) {
   .logo {
@@ -596,5 +596,9 @@ p a:hover {
 
   .p-card {
     margin-top: 10px;
+  }
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
   }
 }
