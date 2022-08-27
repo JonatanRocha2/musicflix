@@ -17,7 +17,7 @@ window.onload = function(){
             <div class="card-body">
               <h5 class="card-title">${NOME_DA_BANDA.value}</h5>
               <p class="card-text">${DESCRICAO_DA_BANDA.value}</p>
-                <a href="./view/detalhes.html" class="btn-abrir btn-abrir-guns" target="_blank">Abrir</a>
+                <a href="./view/detalhes.html" class="btn-abrir" target="_blank">Abrir</a>
             </div>
           </div>  
         `
