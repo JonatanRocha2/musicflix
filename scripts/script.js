@@ -1,12 +1,12 @@
 window.onload = function(){
     //pegar os elementos e adicionar em uma variavel
-    const BOTAO_ENVIAR = document.querySelector('#enviar')
+    const FORMULARIO   = document.querySelector('#enviar')
     const NOME_DA_BANDA = document.getElementById('exampleInputText1')
     const DESCRICAO_DA_BANDA = document.getElementById('exampleInputText2')
     const IMAGEM_DA_BANDA = document.getElementById('exampleInputText3')
     
     //adicionar envento ao clicar no botao 'adicionar'
-    BOTAO_ENVIAR.addEventListener('click', event => {
+    FORMULARIO.addEventListener('submit', event => {
         event.preventDefault()
     
         //criar cards
