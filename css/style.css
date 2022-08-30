@@ -36,7 +36,6 @@ header {
   height: 10vh;
 }
 
-
 .logo:hover {
   transform: scale(1.1);
   transition: 0.3s;
@@ -83,7 +82,6 @@ section.banner {
   justify-content: center;
   font-size: 2rem;
   text-align: center;
-
   /* parallax */
   background-attachment: fixed;
   background-size: cover;
@@ -106,6 +104,7 @@ section.banner {
 
 section.banner p {
   color: #ffffff;
+  font-size: 3rem;
 }
 
 .tituloCards {
@@ -126,6 +125,8 @@ section.itens {
   gap: 50px;
 }
 
+/* Card */
+
 .card {
   display: flex;
   flex-direction: column;
@@ -137,14 +138,54 @@ section.itens {
   border-style: none;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
     0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-
   background-color: var(--colorBackgroundCard);
 }
 
-.btn-abrir-guns {
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img-top {
+  border-radius: 15px 15px 0 0;
+  height: 300px;
+}
+
+.card-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.card-text {
+  font-size: 1.4rem;
+  text-align: justify;
+  height: 175px;
+  overflow-wrap: anywhere;
+}
+
+.btn-abrir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 200px;
+  height: 50px;
+  color: #00000057;
+  border-color: var(--colorBtnCard);
+  background-color: #ffffffb4;
+  box-shadow: 0px 0px 21px 0px rgba(97, 97, 97, 0.82);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  margin-top: 50px;
+}
+
+/* .btn-abrir-banda {
   color: #afafaf;
   animation: glow 1.8s ease-in infinite;
-}
+*/ }
 
 @keyframes glow {
   0% {
@@ -179,56 +220,8 @@ section.itens {
   }
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.card-title {
-  text-align: left;
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-.card-text {
-  font-size: 1.4rem;
-  text-align: justify;
-  height: 175px;
-}
-
-.btn-card {
-  width: 200px;
-  height: 50px;
-  font-weight: bold;
-  border: none;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  margin-bottom: 10px;
-  border-radius: 12px;
-}
-
-.btn-abrir {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  width: 200px;
-  height: 50px;
-  color: #f4f4f4;
-  border-color: var(--colorBtnCard);
-  background-color: #17171784;
-  box-shadow: 0px 0px 21px 0px rgba(97, 97, 97, 0.82);
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-radius: 12px;
-  margin-top: 50px;
-}
-
 .btn-abrir:hover {
-  color: #e1e1e1;
+  color: #00000062;
   background-color: rgba(255, 0, 76, 0.82);
   box-shadow: 0px 0px 21px 0px rgba(255, 0, 76, 0.82);
   border-color: rgba(255, 0, 76, 0.82);
@@ -236,10 +229,7 @@ section.itens {
   transform: scale(1.05);
 }
 
-.card-img-top {
-  border-radius: 15px 15px 0 0;
-  height: 300px;
-}
+/* Footer */
 
 footer section.github {
   display: flex;
@@ -271,6 +261,7 @@ footer div.cardAluno {
   border-radius: 12px;
   background-color: #000000;
 }
+
 .modal-body {
   padding: 0;
 }
@@ -291,6 +282,101 @@ footer div.cardAluno {
   border-radius: 12px;
   margin-bottom: 20px;
 }
+/* TESTE */
+.btn-adicionar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  text-decoration: none;
+  color: #f4f4f4;
+  border-color: var(--colorBtnCard);
+  box-shadow: 0px 0px 21px 0px rgba(51, 187, 105, 0.82);
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 1s;
+  transform: scale(1.05);
+  animation: glow2 1.9s ease-in infinite;
+}
+
+@keyframes glow2 {
+  0% {
+    background-color: #33bb6913;
+  }
+  10% {
+    background-color: #33bb6921;
+  }
+  20% {
+    background-color: #33bb6933;
+  }
+  30% {
+    background-color: #33bb6947;
+  }
+  40% {
+    background-color: #33bb6958;
+  }
+  50% {
+    background-color: #33bb697c;
+  }
+  60% {
+    background-color: #33bb69a5;
+  }
+  70% {
+    background-color: #33bb69e1;
+  }
+  80% {
+    background-color: #33bb69ea;
+  }
+  90% {
+    background-color: #33bb69f3;
+  }
+}
+.btn-adicionar:hover {
+  color: #00000062;
+  background-color: rgba(255, 0, 76, 0.82);
+  box-shadow: 0px 0px 21px 0px rgba(255, 0, 76, 0.82);
+  border-color: rgba(255, 0, 76, 0.82);
+  transition: 1s;
+  transform: scale(1.05);
+  animation: glow3 1.9s ease-in infinite;
+}
+@keyframes glow3 {
+  0% {
+    background-color: #e51b3d1f;
+  }
+  10% {
+    background-color: #e51b3d40;
+  }
+  20% {
+    background-color: #e51b3d50;
+  }
+  30% {
+    background-color: #e51b3d67;
+  }
+  40% {
+    background-color: #e51b3d81;
+  }
+  50% {
+    background-color: #e51b3d99;
+  }
+  60% {
+    background-color: #e51b3db0;
+  }
+  70% {
+    background-color: #e51b3dd1;
+  }
+  80% {
+    background-color: #e51b3de8;
+  }
+  90% {
+    background-color: #e51b3e;
+  }
+}
+/*TESTE */
 
 .botoes{
   display: flex;
@@ -323,7 +409,7 @@ footer div.cardAluno {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: bold;
   text-shadow: 0 0 15px rgba(229, 27, 62, 0.5), 0 0 10px rgba(229, 27, 62, 0.5),
     2px 2px 2px rgba(229, 27, 62, 0);
@@ -334,9 +420,10 @@ h1 {
 h1:hover {
   text-shadow: 0 0 15px rgba(51, 187, 105, 0.5),
     0 0 10px rgba(51, 187, 105, 0.5), 2px 2px 2px rgba(51, 187, 105, 0);
-  color: #33bb69;
+  color: var(--colorBtnCard);
   transition: 0.5s;
 }
+
 .myform {
   padding: 2em;
   max-width: 100%;
@@ -350,19 +437,23 @@ h1:hover {
 }
 
 .form-control:focus {
-  background-color: #707070;
+  background-color: #33bb6965;
+  color: var(--colorBackground);
   box-shadow: inset 0 -1px 0 #7e7e7e;
   border-radius: 3px;
+  font-size: 1.5rem;
 }
 
 .form-control {
   background-color: inherit;
-  color: #fff;
+  color: var(--colorBackground);
   padding-left: 0;
   border: 0;
   border-radius: 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--colorBackground);
+  font-size: 1.5rem;
 }
+
 .myform .btn {
   width: 100%;
   font-weight: 800;
@@ -370,6 +461,7 @@ h1:hover {
   border-radius: 3px;
   padding: 0.5em 0;
 }
+
 .myform .btn:hover {
   background-color: inherit;
   color: #e51b3e;
@@ -377,7 +469,7 @@ h1:hover {
 }
 
 .bg-dark {
-  box-shadow: 0px 0px 17px 0px #33bb69;
+  box-shadow: 0px 0px 17px 0px var(--colorBtnCard);
 }
 
 .card p {
@@ -385,12 +477,14 @@ h1:hover {
   padding-top: 2em;
   color: grey;
 }
+
 p a {
   color: #e1e1e1;
   text-decoration: none;
 }
+
 p a:hover {
-  color: #fff;
+  color: var(--colorBackground);
 }
 
 .frontend {
@@ -398,9 +492,11 @@ p a:hover {
   text-shadow: 0 0 15px rgba(229, 27, 62, 0.5), 0 0 10px rgba(229, 27, 62, 0.5),
     2px 2px 2px rgba(229, 27, 62, 0);
 }
+
 .pipe {
   color: #33bb69;
 }
+
 /* Login Fim */
 
 @media (max-width: 500px) {
@@ -437,6 +533,7 @@ p a:hover {
   header {
     flex-direction: column;
   }
+
   .botoes {
     flex-direction: column;
     gap: 20px;
@@ -491,6 +588,7 @@ p a:hover {
   .card-text {
     font-size: 1.4rem;
     height: 260px;
+    overflow-wrap: anywhere;
   }
 
   .cardAluno1 {
@@ -518,6 +616,7 @@ p a:hover {
   .p-card {
     margin-top: 10px;
   }
+
   .botoes {
     flex-direction: column;
     gap: 20px;
@@ -571,6 +670,7 @@ p a:hover {
   .card-text {
     font-size: 1.4rem;
     height: 260px;
+    overflow-wrap: anywhere;
   }
 
   .cardAluno1 {
@@ -598,6 +698,7 @@ p a:hover {
   .p-card {
     margin-top: 10px;
   }
+
   .botoes {
     flex-direction: column;
     gap: 20px;
